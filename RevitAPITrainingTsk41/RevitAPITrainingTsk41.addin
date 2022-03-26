@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Assembly>"D:\RevitAPITrainig\RevitAPITrainingTsk41.dll"</Assembly>
+		<AddInId>
+			EC1924FE-305E-4384-919E-712538346B05
+		</AddInId>
+		<FullClassName>RevitAPITrainingTsk41.Main</FullClassName>
+		<VendorId>ADSK</VendorId>
+		<Text>Вывод значений стен</Text>
+	</AddIn>
+</RevitAddIns>
