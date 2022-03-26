@@ -34,10 +34,7 @@ namespace RevitAPITrainingTsk41
 
             foreach (Wall wall in walls)
             {
-                //string wallName = wall.get_Parameter(BuiltInParameter.SYMBOL_NAME_PARAM).AsString();
-                //string wallVal = wall.get_Parameter(BuiltInParameter.HOST_VOLUME_COMPUTED).AsString();
-                //Parameter nameParameter = wall.get_Parameter(BuiltInParameter.SYMBOL_NAME_PARAM); 
-                //string wallName = nameParameter.AsString();
+                
                 Parameter valParameter = wall.get_Parameter(BuiltInParameter.HOST_VOLUME_COMPUTED);
                 if (valParameter.StorageType == StorageType.Double)
                 {
@@ -52,11 +49,7 @@ namespace RevitAPITrainingTsk41
 
 
             File.WriteAllText(txtPath, wallnfo);
-            //string desctopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            //string cvsPath = Path.Combine(desctopPath, "wallnfo.csv");
-
-
-            //File.WriteAllText(cvsPath, wallnfo);
+            
 
             return Result.Succeeded;
         }
